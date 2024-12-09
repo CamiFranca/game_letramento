@@ -1,0 +1,125 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.workArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-image: url("../../assets/background/background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+
+    .controls {
+        position: absolute;
+        width: 100%;
+        top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        color: #ffff;
+    }
+
+    .timer {
+        font-weight: bold;
+    }
+
+    .controls button {
+        background: #62BB3C;
+        color: #fff;
+        width: 80px;
+        border: none;
+        height: 30px;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+
+    .baskets {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60%;
+        width: 100%;
+        margin-top: 60px;
+
+    }
+
+    .basket {
+        flex: 1;
+        max-width: 300px;
+        min-height: 250px;
+        margin: 0 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 12px;
+        background-color: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .basket:hover {
+        transform: scale(1.05);
+    }
+
+    .basketIcons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .boxIcons {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        background-color: #E7EEF8;
+        border-top: 2px solid #cbc9c9;
+    }
+
+    .iconContainer {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #e0e0e0; */
+        border-radius: 8px;
+        cursor: grab;
+    }
+    @media (max-width: 768px) {
+        header.controls {
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        main.baskets {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .basket {
+            width: 90%;
+        }
+
+        aside.boxIcons {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+    }
+
+}
