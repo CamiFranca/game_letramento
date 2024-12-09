@@ -97,29 +97,92 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* background-color: #e0e0e0; */
         border-radius: 8px;
         cursor: grab;
     }
-    @media (max-width: 768px) {
+    @media (max-width: 770px) {
         header.controls {
             flex-direction: column;
             gap: 5px;
         }
-
+    
         main.baskets {
             flex-direction: column;
             align-items: center;
         }
-
+    
         .basket {
             width: 90%;
         }
-
+    
         aside.boxIcons {
             flex-wrap: nowrap;
             overflow-x: auto;
         }
     }
+
+@media (max-width: 480px) {
+    .workArea {
+        display: flex;
+        flex-direction: column; 
+        padding: 1rem; 
+        height: auto; 
+        min-height: 100vh; 
+        overflow-y: auto; 
+        box-sizing: border-box; 
+        overflow-y: auto; 
+
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+        top: 0; 
+        margin-bottom: 1rem; 
+    }
+
+    .timer, button {
+        font-size: 1rem;
+        padding: 0.5rem; 
+        width: 100%; 
+        max-width: 200px;
+    }
+
+    .baskets {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 1rem; 
+        align-items: center; 
+    }
+
+    .basket {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto; 
+        padding: 1rem; 
+    }
+
+    .basket h3 {
+        font-size: 1rem;
+    }
+
+    .iconContainer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .boxIcons {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+
+
 
 }
