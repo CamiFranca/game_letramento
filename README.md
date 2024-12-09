@@ -29,17 +29,17 @@ Um jogo interativo onde o objetivo é organizar ícones de arquivos, pastas e pr
 ## 🎯 Como Jogar?
 
 1. Clone este repositório:
-   ```bash
+   bash
    git clone https://github.com/seu-usuario/area-game.git
 
 2. instale as dependências:
-    ```npm install
+    npm install
 
 3. Inicie o servidor de desenvolvimento:    
-    ```npm run dev
+    npm run dev
 
 4. Acesse o jogo do navegador:
-    ```http://localhost:5173/
+    http://localhost:5173/
 
 5. Pressione Iniciar para começar e organize os ícones nas cestas correspondentes.
 
